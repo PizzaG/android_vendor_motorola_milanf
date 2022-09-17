@@ -1,0 +1,9 @@
+service vendor.motosxf /vendor/bin/hw/motosxf
+    class hal
+    user system
+    group system
+    writepid /dev/cpuset/foreground/tasks
+
+on property:persist.vendor.motosxf.enable=false
+    restart vendor.motosxf
+

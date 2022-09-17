@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
+  ~ All Rights Reserved.
+  ~ Confidential and Proprietary - Qualcomm Technologies, Inc.
+  -->
+
+<ContainerGroup name="platform">
+
+    <Container name="WhiteList">
+        <Item name="com.amazon.dee.app" value="2f19adeb284eb36f7f07786152b9a1d14b21653203ad0b04ebbf9c73ab6d7625" type="STRING"/>
+    </Container>
+
+    <Container name="Keywords">
+        <Item name="com.amazon.dee.app" value="a977b1c7" type="STRING" />
+    </Container>
+
+    <ContainerGroup name="a977b1c7">
+        <Container name="common">
+            <Item name="Enrollment.audiosource" value="VOICE_RECOGNITION" type="STRING" />
+        </Container>
+
+        <Container name="a977b1c7_en-US_V5" locale="en-US">
+            <Item name="FirstStageKW.threshold" value="40" type="INTEGER" />
+            <Item name="FirstStageUV.threshold" value="10" type="INTEGER" />
+            <Item name="SecondStageKW.threshold" value="10" type="INTEGER" />
+            <Item name="SecondStageUV.threshold" value="-20.0" type="FLOAT" />
+            <Item name="Enrollment.threshold" value="40" type="INTEGER" />
+            <Item name="KW.preTolerance" value="400" type="INTEGER" />
+            <Item name="KW.postTolerance" value="200" type="INTEGER" />
+            <Item name="UV.preTolerance" value="300" type="INTEGER" />
+            <Item name="UV.postTolerance" value="200" type="INTEGER" />
+            <Item name="Training.numGuardFrames_for_epd" value="500" type="INTEGER" />
+            <Item name="UV.SvaUvWeight" value="0.1" type="FLOAT" />
+            <Item name="Training.internal_keyword_threshold" value="50" type="INTEGER" />
+        </Container>
+    </ContainerGroup>
+</ContainerGroup>
